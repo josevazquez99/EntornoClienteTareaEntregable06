@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+label {
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Estilo de campo válido */
+input.success, textarea.success {
+    border: 2px solid green;
+}
+/* Estilo de campo con error */
+input.error, textarea.error {
+    border: 2px solid red;
+}
+/* Estilo del texto de error */
+.error-text {
+    color: red;
+    font-size: 12px;
+    display: none; 
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto">
+        <p class="error-text" id="asuntoError" style="display:none;">El asunto no puede estar vacío.</p>
+
+        <label for="email">CC (Correo Electrónico):</label>
+        <input type="email" id="email" name="email">
+        <p class="error-text" id="emailError" style="display:none;">Debes introducir un correo electrónico válido.</p>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+        <p class="error-text" id="mensajeError" style="display:none;">El cuerpo del mensaje no puede estar vacío.</p>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+</html>
